@@ -1,4 +1,4 @@
-const BASE_URL = "https://duolingo-clone-rja5.onrender.com";
+const BASE_URL = "https://duolingo-clone-rja5.onrender.com/api";
 
 export async function fetchProfile() {
   const res = await fetch(`${BASE_URL}/user/profile`, { cache: "no-store" });
