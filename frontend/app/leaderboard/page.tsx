@@ -4,7 +4,7 @@ import { fetchLeaderboard } from "@/lib/api";
 import { Shield } from "lucide-react";
 
 export default function LeaderboardPage() {
-  const [board, setBoard] = useState([]);
+  const [board, setBoard] = useState<any[]>([]);
 
   useEffect(() => {
     fetchLeaderboard().then(setBoard);

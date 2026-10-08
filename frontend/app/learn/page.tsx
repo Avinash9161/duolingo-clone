@@ -24,11 +24,6 @@ export default function LearnPage() {
   return (
     <div className="w-full flex flex-col items-center pb-20">
       <TopHeader
-        streak={profile.current_streak}
-        xp={profile.total_xp}
-        hearts={profile.hearts}
-        gems={profile.gems}
-        onHeartRefill={loadData}
       />
 
       <div className="w-full max-w-xl px-4 mt-6">
